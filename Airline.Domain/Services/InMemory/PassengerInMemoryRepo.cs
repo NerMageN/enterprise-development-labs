@@ -1,4 +1,4 @@
-﻿using Airline.Domain.Model;
+﻿using Airline.Domain.Entity;
 using Airline.Domain.Data;
 using System.Collections.Generic;
 using System.Linq;

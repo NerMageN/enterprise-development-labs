@@ -64,7 +64,7 @@ public class FlightRepoTests
     [Fact]
     public async Task AddFlight_Success()
     {
-        var repo = new FlightInMemoryRepository();
+        var repo = new FlightInMemoryRepo();
         var newFlight = new Flight
         {
             Id = 100,

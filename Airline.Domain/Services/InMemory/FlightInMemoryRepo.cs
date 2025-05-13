@@ -52,7 +52,7 @@ public class FlightInMemoryRepo : IFlightRepo
         _flights.Add(flight);
         return Task.FromResult(flight);
     }
-
+    
     /// <summary>
     /// Обновляет существующий рейс в репозитории.
     /// </summary>
@@ -172,7 +172,7 @@ public class FlightInMemoryRepo : IFlightRepo
             .ToList();
 
         var averageLoad = loads.Average();
-        var maxLoad = (double)loads.Max(); /
+        var maxLoad = (double)loads.Max(); 
 
         return Task.FromResult((averageLoad, maxLoad));
     }

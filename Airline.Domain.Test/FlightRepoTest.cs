@@ -88,7 +88,7 @@ public class FlightRepoTests
     [Fact]
     public async Task UpdateFlight_Success()
     {
-        var repo = new FlightInMemoryRepository();
+        var repo = new FlightInMemoryRepo();
         var flightToUpdate = (await repo.GetFlightsByRoute("Москва", "Санкт-Петербург")).First();
 
         flightToUpdate.Code = "SU200";
@@ -103,7 +103,7 @@ public class FlightRepoTests
     [Fact]
     public async Task DeleteFlight_Success()
     {
-        var repo = new FlightInMemoryRepository();
+        var repo = new FlightInMemoryRepo();
         var flightToDelete = (await repo.GetFlightsByRoute("Москва", "Санкт-Петербург")).First();
 
         var deleteResult = await repo.Delete(flightToDelete.Id);
